@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <!-- The meta viewport tag is used to configure the different display formats of our screens
+    La balise meta viewport sert à paramétrer les différents formats d'affichage de nos écrans -->
+    <!-- Examples of viewport meta tags / Exemples de balises méta de fenêtre d'affichage -->
+    <!-- The viewport meta tag contains an unknown property
+    La balise meta viewport contient une propriété inconnue
+    <meta name="viewport" content="unknown-property=1, width=device-width, initial-scale=1">
+    -->
+    <!-- The viewport meta tag contains an invalid value
+    La balise Meta de la fenêtre d'affichage contient une valeur non valide
+    <meta name="viewport" content="width=invalid-value, initial-scale=1">
+    -->
+    <!-- The viewport meta tag contains a disallowed property (user-scalable)
+    La balise Meta de la fenêtre d'affichage contient une propriété non autorisée (évolutive par l'utilisateur)
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    -->
+    <!-- The viewport meta tag contains a fixed width value
+    La balise meta viewport contient une valeur de largeur fixe
+    <meta name="viewport" content="width=320, initial-scale=1">
+    -->
+    <!-- The viewport meta tag contains initial-scale with a value different than 1 or 1.0
+    La balise Meta de la fenêtre d'affichage contient une échelle initiale avec une valeur différente de 1 ou 1,0
+    <meta name="viewport" content="width=device-width, initial-scale=5">
+    -->
+    <!-- There are multiple viewport meta tags
+    Il existe plusieurs balises méta de fenêtre d'affichage
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    ...
+    <meta name="viewport" content="width=device-width">
+    ...
+    -->
+    <!-- If versions of Safari for iOS < 9 are targeted
+    Si les versions de Safari pour iOS < 9 sont ciblées
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">    
+    -->
+    <!-- If versions of Safari for iOS 9+ are targeted
+    Si les versions de Safari pour iOS 9+ sont ciblées
+    <meta name="viewport" content="width=device-width">
+    -->
+    <!-- How to use this hint? see here => https://webhint.io/docs/user-guide/hints/hint-meta-viewport/
+    Comment utiliser cet indice ? voir ici => https://webhint.io/docs/user-guide/hints/hint-meta-viewport/ -->
+    
+    <!-- Viewport Concept? See here => https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts 
+    Concept de fenêtre ? Voir ici => https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts -->
+    <meta name="viewport" content="width=device-width" />
+    <title>Exemple de cours</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Examples  simples scripts elements integration for JS
+    Exemples d'intégration d'éléments de scripts simples pour JS -->
+    <!-- HTML4 et (x)HTML 
+    <script type="text/javascript" src="js/anniversaire.js"></script>
+    -->
+    <!-- HTML5 -->
+    <script src="js/anniversaire.js" type="text/html"></script>
+  </head>
+  <body>
+    <!-- The viewport meta tag is not specified in <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <div id="list_section">
+      <h1 id="header">Liste de choses à faire</h1>
+      <ul>
+        <li class="item">Acheter des billets de cinéma</li>
+      </ul>
+      <div id="newItemButton"><button href="#">nouvel article</button></div>
+      <form id="newItemForm">
+        <input type="text" id="itemField" placeholder="Article" />
+        <input type="submit" id="add" value="add" />
+      </form>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+    <script src="js/anniversaire.js"></script>
+  </body>
+</html>
